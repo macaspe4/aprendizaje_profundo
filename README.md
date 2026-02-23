@@ -37,8 +37,18 @@ Ejemplo dataset:
 | Random Forest       | 96.8%    | 0.93     | Ensemble        |
 | MLP (objetivo)      | >95%     | >0.93    | Deep Learning   |
 
+| Modelo              | Parámetros | Train Acc | Val Acc | Test Acc | F1 macro(test) |
+| ------------------- | ---------- | --------- | ------- | -------- | -------------- |
+| Logistic Regression |   |   |   | 74%  | 0.72 |
+| XGBoost             |   |   |   |  84% | 0.81 |
+| Random Forest       | 16592 | 100% | 97.67% | 96.8% | 0.93 |
+| Modelo lineal (Regresión logistica) | 33 | 97.71% | 98.67% | 96.67% | 0.9325 |
+| Modelo ML (Árbol de decisión) | 57 | 93.36% | 88.33% | 90.33% | 0.8577 |
+| Modelo red neuronal |  |    |   |   |   |
+
+
 ### 3.1. Referencias
-Según la documentación del dataset en Kaggle, modelos tradicionales como Logistic Regression alcanzan aproximadamente un 74% de accuracy, mientras que métodos de boosting como XGBoost alcanzan en torno al 84%.
+Según la documentación del dataset en Kaggle, modelos tradicionales como Logistic Regression se espera que alcancen una precisión aproximadamente de un 74% de accuracy, mientras que métodos de boosting como XGBoost en torno al 84%.
 Algunos usuarios han reportado resultados superiores utilizando Random Forest, llegando hasta 96% de accuracy, lo que sugiere que el dataset presenta patrones altamente separables.
 
 ### 3.2. Métricas
