@@ -37,7 +37,7 @@ Ejemplo dataset:
 | Random Forest       | 16592 | 100% | 97.67% | 96.8% | 0.93 |
 | Modelo lineal (Regresión logistica) | 33 | 97.71% | 98.67% | 96.67% | 0.9325 |
 | Modelo ML (Árbol de decisión) | 57 | 93.36% | 88.33% | 90.33% | 0.8577 |
-| Modelo red neuronal |  |    |   |   |   |
+| Modelo red neuronal | 33 | 94,21% | 97,00% | 93,67% | 82,43% |
 
 
 ### 3.1. Referencias
@@ -51,5 +51,6 @@ Al usar el F1-Macro, nos aseguramos de que el modelo sea realmente capaz de dete
 
 ## 4. Estructura del proyecto
 - notebooks/: Contiene el Análisis Exploratorio de Datos (EDA).
+- modelos/: Modelos del proyecto.
 - data/: Datos del proyecto.
 - requirements.txt: Librerías necesarias.
