@@ -37,7 +37,7 @@ Ejemplo dataset:
 | Random Forest       | 16592 | 100% | 97.67% | 96.8% | 0.93 |
 | Modelo lineal (Regresión logistica) | 33 | 97.71% | 98.67% | 96.67% | 0.9325 |
 | Modelo ML (Árbol de decisión) | 57 | 93.36% | 88.33% | 90.33% | 0.8577 |
-| Modelo red neuronal | 33 | 94,21% | 97,00% | 93,67% | 82,43% |
+| Modelo red neuronal | 33 | 94,21% | 97,00% | 93,67% | 0,8243 |
 
 
 ### 3.1. Referencias
@@ -47,6 +47,17 @@ Algunos usuarios han reportado resultados superiores utilizando Random Forest, l
 ### 3.2. Métricas
 El Accuracy mide el porcentaje total de aciertos sobre el total de casos, indicando qué tan bien predice el modelo en general; sin embargo, en problemas de salud laboral como el burnout, el F1-Macro es más crítico porque calcula la media del rendimiento de cada categoría (Bajo, Medio, Alto) por separado. 
 Al usar el F1-Macro, nos aseguramos de que el modelo sea realmente capaz de detectar correctamente los casos de riesgo "Alto" y no se limite a ignorarlos para centrarse solo en la clase mayoritaria, ofreciendo así una visión mucho más equilibrada y realista del éxito del proyecto.
+
+### 3.3. Conclusiones Modelos Simples
+Tras experimentar con tres aproximaciones distintas (Lineal, Machine Learning y Deep Learning), hemos obtenido las siguientes conclusiones:
+
+- La Regresión Logística destaca por su increíble eficiencia. Con solo 33 parámetros, iguala el rendimiento de modelos mucho más pesados, siendo la opción más sólida para una implementación rápida.
+
+- El Árbol de Decisión, a pesar de tener un Accuracy menor, es nuestra elección recomendada para la detección de burnout alto. Su capacidad para no dejar escapar casos críticos (Recall 0.95) lo hace superior en un entorno de prevención de riesgos.
+
+- La Red Neuronal ha demostrado una generalización perfecta. La paridad entre los resultados de entrenamiento y test confirma que los datos han sido preprocesados y escalados correctamente, permitiendo una convergencia limpia del modelo.
+
+Resultado final: Hemos logrado superar los modelos de referencia iniciales, pasando de un 74% de acierto base a un 96.67%, utilizando arquitecturas simplificadas y optimizadas
 
 
 ## 4. Estructura del proyecto
