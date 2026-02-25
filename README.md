@@ -30,13 +30,6 @@ Ejemplo dataset:
 
 
 ## 3. Estado del Arte
-| Modelo              | Accuracy | F1-Macro | Tipo            |
-| ------------------- | -------- | -------- | --------------- |
-| Logistic Regression | 74%      | 0.72     | Baseline lineal |
-| XGBoost             | 84%      | 0.81     | Boosting        |
-| Random Forest       | 96.8%    | 0.93     | Ensemble        |
-| MLP (objetivo)      | >95%     | >0.93    | Deep Learning   |
-
 | Modelo              | Parámetros | Train Acc | Val Acc | Test Acc | F1 macro(test) |
 | ------------------- | ---------- | --------- | ------- | -------- | -------------- |
 | Logistic Regression |   |   |   | 74%  | 0.72 |
