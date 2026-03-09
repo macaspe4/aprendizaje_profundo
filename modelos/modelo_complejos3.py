@@ -11,9 +11,10 @@ import tensorflow as tf
 from tensorflow.keras import layers, models
 
 def crear_modelo(input_shape):
-      """
-  Crea una red neuronal profunda y estrecha.
-  """
+    """
+    Crea una red neuronal profunda y estrecha
+    """
+    
     model = models.Sequential([
         layers.Input(shape=(input_shape,)),
         layers.Dense(16, activation='relu'),
@@ -22,10 +23,5 @@ def crear_modelo(input_shape):
         layers.Dense(4, activation='relu'),
         layers.Dense(3, activation='softmax')
     ])
-
-    model.compile(
-        optimizer='adam',
-        loss='sparse_categorical_crossentropy',
-        metrics=['accuracy']
-    )
+    model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     return model
