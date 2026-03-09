@@ -11,9 +11,9 @@ import tensorflow as tf
 from tensorflow.keras import layers, models
 
 def crear_modelo(input_shape):
-  """
-  Arquitectura Ancha y Superficial
-  """
+    """
+    Arquitectura Ancha y Superficial
+    """
     model = models.Sequential([
         layers.Input(shape=(input_shape,)),
         layers.Dense(128, activation='relu'),
