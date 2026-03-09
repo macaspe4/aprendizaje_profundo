@@ -14,7 +14,6 @@ def crear_modelo(input_shape):
     """
     Crea una red neuronal profunda y estrecha
     """
-    
     model = models.Sequential([
         layers.Input(shape=(input_shape,)),
         layers.Dense(16, activation='relu'),
