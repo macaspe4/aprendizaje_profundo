@@ -37,7 +37,7 @@ Ejemplo dataset:
 | Random Forest       | 16592 | 100% | 97.67% | 96.8% | 0.93 |
 | Modelo lineal (Regresión logistica) | 33 | 97.71% | 98.67% | 96.67% | 0.9325 |
 | Modelo ML (Árbol de decisión) | 57 | 93.36% | 88.33% | 90.33% | 0.8577 |
-| Modelo red neuronal | 33 | 94,21% | 97,00% | 93,67% | 0.8243 |
+| Modelo red neuronal | 33 | 96,79% | 98,00% | 96,67% | 0.9325 |
 | Modelo complejo 1   | 931 | 99,43% | 98,00% | 97,67% | 0.9459 |
 | Modelo complejo 2   | 2883 | 99,64% | 98,33% | 97,00% | 0.9323 |
 | Modelo complejo 3   | 535 | 99,07% | 99,33% | 97,00% | 0.9393 |
