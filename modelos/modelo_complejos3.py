@@ -11,7 +11,7 @@ import tensorflow as tf
 from tensorflow.keras import layers, models
 
 def crear_modelo(input_shape):
-  """
+      """
   Crea una red neuronal profunda y estrecha.
   """
     model = models.Sequential([
