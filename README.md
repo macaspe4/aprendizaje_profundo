@@ -64,6 +64,19 @@ Tras experimentar con tres aproximaciones distintas (Lineal, Machine Learning y 
 
 Resultado final: Hemos logrado superar los modelos de referencia iniciales, pasando de un 74% de acierto base a un 96.67%, utilizando arquitecturas simplificadas y optimizadas
 
+### 3.4. Conclusiones Modelos Complejos
+
+Tras explorar distintas arquitecturas de redes neuronales con mayor profundidad y número de parámetros, hemos analizado cómo influye la complejidad del modelo en la capacidad de aprendizaje y generalización del sistema.
+
+El Modelo Complejo 1 representa el mejor equilibrio entre rendimiento y tamaño del modelo. Con una arquitectura de dos capas ocultas (32 y 16 neuronas), consigue el mejor resultado en F1-Macro (0.9459) y uno de los mayores accuracy en test (97.67%), demostrando que una red moderadamente profunda es suficiente para capturar las relaciones presentes en el dataset.
+
+El Modelo Complejo 3, basado en una arquitectura más profunda pero con menos neuronas por capa, muestra un comportamiento muy estable durante el entrenamiento. Su alto accuracy en validación (99.33%) indica una excelente capacidad de generalización, confirmando que aumentar la profundidad puede mejorar la capacidad de representación del modelo sin incrementar excesivamente el número de parámetros.
+
+El Modelo Complejo 5 introduce técnicas de regularización mediante Dropout, con el objetivo de reducir el riesgo de sobreajuste en arquitecturas más grandes. Los resultados obtenidos muestran que el modelo mantiene un rendimiento muy competitivo (97.67% de accuracy en test y F1-Macro 0.9436), demostrando que la regularización permite entrenar redes más profundas sin pérdida significativa de generalización.
+
+Sin embargo, el análisis global de resultados muestra que aumentar el número de parámetros más allá de cierto punto no aporta mejoras sustanciales en el rendimiento. Incluso modelos muy grandes, como el Modelo Complejo 4, no superan de forma clara a arquitecturas más simples.
+
+Resultado final: Los experimentos confirman que el problema de clasificación del burnout presenta patrones relativamente bien definidos. Por ello, arquitecturas de complejidad moderada como el Modelo Complejo 1 son capaces de capturar eficazmente la información del dataset, alcanzando resultados cercanos al 98% de accuracy, sin necesidad de utilizar redes excesivamente grandes o costosas computacionalmente.
 
 ## 4. Estructura del proyecto
 - notebooks/: Contiene el Análisis Exploratorio de Datos (EDA).
