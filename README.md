@@ -94,7 +94,7 @@ Finalmente, el Modelo C4, que es la arquitectura con mayor número de parámetro
 
 ### 3.6. Modelo Final Seleccionado
 
-A partir de los resultados obtenidos y del análisis de complejidad realizado, seleccionamos el Modelo Complejo 1 como modelo final del proyecto.
+A partir de los resultados obtenidos y del análisis de complejidad realizado, seleccionamos el **Modelo Complejo 1** como modelo final del proyecto.
 
 Esta arquitectura ofrece el mejor equilibrio entre rendimiento y complejidad, alcanzando uno de los mayores accuracy en test (97.67%) y el mejor F1-Macro (0.9459) entre las redes neuronales evaluadas, sin requerir un número excesivo de parámetros.
 
