@@ -78,6 +78,30 @@ Sin embargo, el análisis global de resultados muestra que aumentar el número d
 
 Resultado final: Los experimentos confirman que el problema de clasificación del burnout presenta patrones relativamente bien definidos. Por ello, arquitecturas de complejidad moderada como el Modelo Complejo 1 son capaces de capturar eficazmente la información del dataset, alcanzando resultados cercanos al 98% de accuracy, sin necesidad de utilizar redes excesivamente grandes o costosas computacionalmente.
 
+### 3.5. Análisis de Complejidad del Modelo (Bias–Variance Tradeoff)
+
+Con el objetivo de analizar cómo afecta la complejidad del modelo al rendimiento, se ha realizado un estudio del Bias–Variance Tradeoff utilizando las distintas arquitecturas evaluadas. En el gráfico se representan tres componentes clave: el error de entrenamiento (bias), la diferencia entre error de entrenamiento y test (varianza) y el error total en test.
+
+La Red Simple presenta el mayor error de entrenamiento, lo que indica un bias relativamente alto debido a su baja complejidad. Sin embargo, la diferencia entre entrenamiento y test es prácticamente inexistente, lo que demuestra una gran estabilidad y ausencia de sobreajuste.
+
+A medida que aumentamos la complejidad del modelo, como ocurre en Modelo C3 y Modelo C1, el error de entrenamiento disminuye significativamente. Esto indica que las redes son capaces de aprender patrones más complejos presentes en los datos. En estos casos también se observa una reducción del error total en test, lo que confirma una mejora en la capacidad de generalización.
+
+El Modelo C2 muestra un ligero incremento en la varianza, reflejando una mayor diferencia entre los resultados de entrenamiento y test. Este comportamiento sugiere que, aunque el modelo aprende bien los datos de entrenamiento, comienza a aparecer una ligera tendencia al sobreajuste.
+
+Por su parte, el Modelo C5 consigue mantener un buen equilibrio entre capacidad de aprendizaje y generalización gracias al uso de regularización mediante Dropout, lo que reduce la varianza y estabiliza el rendimiento en datos no vistos.
+
+Finalmente, el Modelo C4, que es la arquitectura con mayor número de parámetros, no muestra mejoras claras respecto a modelos menos complejos. Esto confirma que incrementar excesivamente la complejidad del modelo no siempre produce mejores resultados, especialmente cuando el dataset ya presenta patrones relativamente bien definidos.
+
+### 3.6. Modelo Final Seleccionado
+
+A partir de los resultados obtenidos y del análisis de complejidad realizado, seleccionamos el Modelo Complejo 1 como modelo final del proyecto.
+
+Esta arquitectura ofrece el mejor equilibrio entre rendimiento y complejidad, alcanzando uno de los mayores accuracy en test (97.67%) y el mejor F1-Macro (0.9459) entre las redes neuronales evaluadas, sin requerir un número excesivo de parámetros.
+
+En comparación con arquitecturas más grandes, el Modelo Complejo 1 mantiene una alta capacidad de generalización sin introducir un aumento significativo en la varianza, lo que lo convierte en una solución eficiente y robusta para la clasificación del riesgo de burnout.
+
+Conclusión final: Una arquitectura moderadamente profunda es suficiente para capturar los patrones presentes en el dataset, permitiendo alcanzar resultados cercanos al 98% de accuracy sin necesidad de utilizar redes excesivamente grandes o computacionalmente costosas.
+
 ## 4. Estructura del proyecto
 - notebooks/: Contiene el Análisis Exploratorio de Datos (EDA).
 - modelos/: Modelos del proyecto.
